@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DataRequest",
+        "repositoryURL": "https://github.com/davidthorn/DataRequest.git",
+        "state": {
+          "branch": null,
+          "revision": "ddad67019308b4d4b625de7ac10f4ecadfef3aa0",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "GitHubUser",
+        "repositoryURL": "https://github.com/davidthorn/GitHubUser.git",
+        "state": {
+          "branch": null,
+          "revision": "9de433f1d6cd6300e4b8bec7628f9b394565062e",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "GitHubUserUrls",
+        "repositoryURL": "https://github.com/davidthorn/GitHubUserUrls.git",
+        "state": {
+          "branch": null,
+          "revision": "6f8f537f83b57ec335f0eb3a8c294b0199e35bc9",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
