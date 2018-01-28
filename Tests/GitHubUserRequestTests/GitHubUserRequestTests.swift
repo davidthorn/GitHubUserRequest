@@ -1,36 +1,45 @@
 import XCTest
+import CodableExtensions
+import GitHubUser
+import Dispatch
 
 @testable import GitHubUserRequest
 
 class GitHubUserRequestTests: XCTestCase {
     
+    /// Tests loading a GithubUser user synchronously
     func testLoadingUser() {
 
         let request = GitHubUserRequest(name: "davidthorn")
-
         let user = request.load()
-
         XCTAssertNotNil(user , "the user object must not be nil")
-
     
     }
 
-    func testRepos() {
+    /// Tests loading the user asynchronously
+    func testLoadingGitHubUserAsync() {
+
+        let group = DispatchGroup()
+
+        group.enter()
 
         let request = GitHubUserRequest(name: "davidthorn")
 
-        let repos = request.repos
+        request.async { user in
 
-        XCTAssertEqual(repos.count , 0 )
+            XCTAssertNotNil(user)
+            group.leave()
+        }
 
-        XCTAssertNotNil(request.user)
+        group.wait()
 
-    
     }
-
 
     static var allTests = [
         ("testLoadingUser", testLoadingUser),
-        ("testRepos" , testRepos)
+        (
+            "Test loading the user async",
+            testLoadingGitHubUserAsync
+        )
     ]
 }

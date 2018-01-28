@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "CodableExtensions",
+        "repositoryURL": "https://github.com/davidthorn/SwiftCodableExtensions.git",
+        "state": {
+          "branch": null,
+          "revision": "27d11e3848130b0aaafc22b910d0ef5d37135f48",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "DataRequest",
         "repositoryURL": "https://github.com/davidthorn/DataRequest.git",
         "state": {
           "branch": null,
-          "revision": "ddad67019308b4d4b625de7ac10f4ecadfef3aa0",
-          "version": "1.1.1"
+          "revision": "4b54cb2a35c9dfbd84f36031866c0890a0d18f9c",
+          "version": "2.0.3"
         }
       },
       {
@@ -15,8 +24,8 @@
         "repositoryURL": "https://github.com/davidthorn/GitHubUser.git",
         "state": {
           "branch": null,
-          "revision": "9de433f1d6cd6300e4b8bec7628f9b394565062e",
-          "version": "0.3.0"
+          "revision": "8b9c486f6bbb85326aa4c2f3d04a3e19e1b7235b",
+          "version": "1.0.0"
         }
       },
       {

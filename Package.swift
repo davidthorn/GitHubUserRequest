@@ -13,8 +13,9 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "https://github.com/davidthorn/GitHubUser.git" , from: "0.3.0"),
-         .package(url: "https://github.com/davidthorn/DataRequest.git" , from: "1.0.0")
+         .package(url: "https://github.com/davidthorn/GitHubUser.git" , from: "1.0.0"),
+         .package(url: "https://github.com/davidthorn/DataRequest.git" , from: "2.0.0"),
+         .package(url: "https://github.com/davidthorn/SwiftCodableExtensions.git" , from: "1.0.0")
         
     ],
     targets: [
@@ -24,10 +25,11 @@ let package = Package(
             name: "GitHubUserRequest",
             dependencies: [
                 "DataRequest",
-                "GitHubUser"
+                "GitHubUser",
+                "CodableExtensions"
             ]),
         .testTarget(
             name: "GitHubUserRequestTests",
-            dependencies: ["GitHubUserRequest"]),
+            dependencies: ["GitHubUserRequest" , "GitHubUser"]),
     ]
 )
